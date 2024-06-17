@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.designpatterns.SuppliesController">
+   <children>
+      <Pane layoutX="200.0" prefHeight="79.0" prefWidth="600.0" style="-fx-background-color: #e9f5f1;" />
+      <Label layoutX="210.0" layoutY="14.0" text="Inventory Management">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="210.0" layoutY="50.0" text="Supplies">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="768.0" layoutY="73.0" prefHeight="526.0" prefWidth="32.0" style="-fx-background-color: #e9f5f1;" />
+      <TableView fx:id="inventoryTableView" layoutX="208.0" layoutY="123.0" prefHeight="462.0" prefWidth="554.0">
+         <columns>
+            <TableColumn fx:id="supplyID" prefWidth="74.4000244140625" text="supplyID" />
+            <TableColumn fx:id="supplyName" prefWidth="179.20001220703125" text="supplyName" />
+            <TableColumn fx:id="supplyType" prefWidth="177.5999755859375" text="supplyType" />
+            <TableColumn fx:id="quantity" prefWidth="123.199951171875" text="quantity" />
+         </columns>
+      </TableView>
+      <TextField fx:id="searching" layoutX="210.0" layoutY="90.0" promptText="Search by id, name, etc." />
+      <Button fx:id="searchButton" layoutX="393.0" layoutY="87.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="116.0" style="-fx-background-color: #e9f5f1; -fx-background-radius: 40; -fx-border-color: gray; -fx-border-radius: 40;" text="Search" />
+      <Pane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #e9f5f1;">
+         <children>
+            <Label layoutX="16.0" layoutY="327.0" text="Staff Scheduling">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="94.0" text="Reservation Operations">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="426.0" text="Finances">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="216.0" text="Inventory Management">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="FrontDesk" layoutX="12.0" layoutY="130.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="Front Desk">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Reservations" layoutX="11.0" layoutY="174.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="Reservations">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Tasks" layoutX="13.0" layoutY="388.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="Tasks">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Housekeeping" layoutX="13.0" layoutY="348.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="Housekeeping">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="CashBooks" layoutX="13.0" layoutY="447.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="Cash Books">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Supplies" layoutX="12.0" layoutY="245.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #b3e1d2; -fx-background-radius: 15;" text="Supplies">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Orders" layoutX="11.0" layoutY="284.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="Orders">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="79.0" fitWidth="86.0" layoutX="57.0" layoutY="14.0">
+               <image>
+                  <Image url="@staff/images/hotel.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
